@@ -1,16 +1,5 @@
-﻿#Old script for historical purposes:
-
-#$Searchpattern = Read-Host -Prompt 'Input the pattern you want to search for in the logs'
-#Get-ChildItem -Path "c:\users\myusername\desktop\srb*\*.txt" -Recurse -Force | sls $Searchpattern
-#Read-Host -Prompt 'Press enter to close...'
-
-
-#Actual script
-
+﻿
 #Use: Searchlogs.ps1 (-path) (-pattern) (-extension) 1/2/3(-context) BOOL(-giveoutput)
-#The pattern matches regular expressions (regex); the extension is, for example, simply "txt" (no need for the quotes)
-#The context parameter can be 1 if you want results only based on content matches, 2 for filename matches, 3 for both
-#The giveoutput switch turns the script from an user-interactable mode where you can open files with search hits into a script that simply gives an array of the files with hits as output
 
 param(
 
